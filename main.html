@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logotitle-removebg-preview.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>ServicMed</title>
+</head>
+<body>
+    <nav>
+        <a href="main.html"><img src="img/novalogo.png" height="90px" width="100px" id="logo"></a>
+        <ul class="links">
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+            <li><a href="remedios.html">Remédios</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+        </ul>
+        <a href="cadastro.php" id="bt-cadastro">Cadastre-se</a>
+
+
+        <div class="mobile-menu-icon">
+          <button onclick="menushow()"><img src="img/menu_icon_244496-removebg-preview.png" height="30px" width="30px" class="icon"></button>
+        </div>
+
+    </nav>
+     <div class="mobile-menu">
+      <ul class="links">
+        <li><a href="agendamentos.html">Agendamentos</a></li>
+        <li><a href="remedios.html">Remédios</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Ajuda</a></li>
+    </ul>
+       <a href="cadastro.php" id="bt-cadastro">Cadastre-se</a>
+     </div>
+
+     <!--carrousel-->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/img1.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/img2.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/img3.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        
+          <!--Script carrousel-->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              delay:3000,
+              autoplay: true,
+              loop: true,
+            });
+          </script>
+        <!--carrousel-->
+
+        <!--Cards-->
+<div data-aos="fade-up">
+<section class="articles">
+  <article>
+    <div class="article-wrapper">
+      <figure>
+        <img src="img/imgcadastro.png" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Remédios</h2>
+        <p>
+          Prescrevendo uma receita específica para o tratamento do paciente, você poderá encomendar o remédio que será entregue diretamente na sua casa sem ter que apresentar a receita em farmácias.        </p>
+        <a href="#" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="img/imgagendamento.png" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Agendamentos</h2>
+        <p>
+          Assim que realizar todo cadastro no site, você entrará no agendamento. É essencial colocar todas as informações, principalmente a gravidade e se vai precisar de ambulância. Logo após colocar todas as informações, tudo será enviado para o sistema do hospital.
+        </p>
+        <a href="#" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="img/undraw_Dev_focus_re_6iwt.png" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Facilidade</h2>
+        <p>
+          Contamos com uma boa pratica de atendimento rápido, trazendo assim 100% de conforto e proporcionando uma nova experiência de atendimento nos postos hospitalares.   
+        </p>
+        <a href="#" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+</section>
+</div>
+<!--Cards-->
+<!--Vlibras-->
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            darkModeToggle.addEventListener('click', function () {
+                document.body.classList.toggle('dark-mode');
+            });
+        });
+      </script>
+<!--Vlibras-->
+ <section style="margin-top: 60px;">
+
+  <!-- CardsRemédios -->
+
+            <h1 id="tt"><b>PRODUTOS </b><b> EM DESTAQUE</b></h1>
+            <div class="slider">
+            <div class="card">
+                <div class="like"></div>
+                    <img class="product" src="img/ibuprofeno.png" alt="">
+                    <h4 class="title-product">Ibuprofeno</h4>
+                      <div class="rating">
+                      &#9733
+                      &#9733
+                      &#9733
+                      &#9734
+                      &#9734
+                     </div>
+                    <div class="price">
+                      <h5>R$18,50</h5>
+                      <h5>R$9,90</h5>
+                    </div>
+                    <a href="#">Adicionar ao Carrinho</a>
+            </div>
+
+
+            <div class="card">
+              <div class="like"></div>
+                  <img class="product" src="img/cafalexina.png" alt="">
+                  <h4 class="title-product">Cafalexina</h4>
+                  <div class="rating">
+                    &#9733
+                    &#9733
+                    &#9733
+                    &#9734
+                    &#9734
+                   </div>
+                  <div class="price">
+                    <h5>R$39,99</h5>
+                    <h5>R$27,80</h5>
+                  </div>
+                  <a href="#">Adicionar ao Carrinho</a>
+          </div>
+
+          <div class="card">
+            <div class="like"></div>
+                <img class="product" src="img/amoxicilina.png" alt="">
+                <h4 class="title-product">Amoxicilina</h4>
+                <div class="rating">
+                  &#9733
+                  &#9733
+                  &#9733
+                  &#9734
+                  &#9734
+                 </div>
+                <div class="price">
+                  <h5>R$37,90</h5>
+                  <h5>R$26,40</h5>
+                </div>
+                <a href="#">Adicionar ao Carrinho</a>
+        </div>
+
+        <div class="card">
+          <div class="like"></div>
+              <img class="product" src="img/allegra.png" alt="">
+              <h4 class="title-product">Allegra</h4>
+              <div class="rating">
+                &#9733
+                &#9733
+                &#9733
+                &#9734
+                &#9734
+               </div>
+              <div class="price">
+                <h5>R$48,99</h5>
+                <h5>R$35,50</h5>
+              </div>
+              <a href="#">Adicionar ao Carrinho</a>
+      </div>
+
+      <div class="card">
+        <div class="like"></div>
+            <img class="product" src="img/omeprazol.png" alt="" height="255">
+            <h4>Omeprazol</h4>
+            <div class="rating">
+              &#9733
+              &#9733
+              &#9733
+              &#9734
+              &#9734
+             </div>
+            <div class="price">
+              <h5>R$28,58</h5>
+              <h5>R$18,50</h5>
+            </div>
+            <a href="#">Adicionar ao Carrinho</a>
+    </div>
+          </div>
+          <!-- CardsRemédios -->
+ </section>
+
+  <!--Rodapé-->
+  <main style="margin-top: 200px;">
+    <footer id="ajuda">
+       <div id="footer_content">
+         <div id="footer_contacts">
+            <h1>ServiceMed</h1>
+            <p>Temos o melhor atendimento</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+         </div>
+          
+         <ul class="footer-list">
+             <li>
+              <h3>Navegue por aqui</h3>
+             </li>
+             <li>
+               <a href="#" class="footer-link">Agendamentos</a>
+             </li>
+             <li>
+              <a href="#" class="footer-link">Remédios</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Sobre</a>
+            </li>
+         </ul>
+
+         <ul class="footer-list">
+           <li>
+            <h3>Contato</h3>
+           </li>
+          <li>
+            <a href="#" class="footer-link"><i class="fa-solid fa-phone" id="fontw"></i></i>143532-4530</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link"><i class="fa-brands fa-whatsapp" id="fontw"></i>(14) 996221518</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link"><i class="fa-regular fa-envelope" id="fontw"></i>servicmedweb@gmail.com</a>
+          </li>
+
+         </ul>
+         <div id="footer_subscribe">
+              <h3>Sobre</h3>
+
+              <p>
+                 Estamos tentando trazer mais comodidade para nossos clientes
+              </p>
+
+              <div id="input_group">
+                  <input type="email" id="email">
+                  <button>
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+              </div>
+         </div>
+       </div>
+
+       <div id="footer_copyright">
+        &#169
+        2024 ServiceMed
+       </div>
+    </footer>
+    </main>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
