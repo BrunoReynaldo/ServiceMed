@@ -11,19 +11,19 @@ pipeline {
 
         stage('Build Docker') {
             steps {
-                bat 'docker build -t site-social .'
+                bat 'docker build -t servicemed .'
             }
         }
 
         stage('Remover Container Antigo') {
             steps {
-                bat 'docker rm -f site-social || exit 0'
+                bat 'docker rm -f servicemed || exit 0'
             }
         }
 
         stage('Subir Novo Container') {
             steps {
-                bat 'docker run -d -p 8081:80 --name site-social site-social'
+                bat 'docker run -d -p 8081:80 --name servicemed servicemed'
             }
         }
     }
