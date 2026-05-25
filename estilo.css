@@ -203,6 +203,7 @@ article {
   *::before,
   *::after {
     box-sizing: border-box;
+    color: black;
   }
   
   body {
@@ -265,7 +266,7 @@ article {
 /*Rodapé*/
 :root{
   --color-neutral-0: #0e0c0c;
-  --color-neutral-10: #171717;
+  --color-neutral-10: rgb(220, 220, 220);
   --color-neutral-30: #a8a29e;
   --color-neutral-40: #f5f5f5;
 
@@ -289,6 +290,7 @@ footer{
 }
 #footer_contacts h1{
   margin-bottom: 0.75rem;
+  color: black;
 }
 #footer_social_media{
   display: flex;
@@ -327,7 +329,7 @@ footer{
   list-style: none;
 }
 .footer-list .footer-link{
-  color: var(--color-neutral-30);
+  color: rgb(80, 80, 80);
 }
 .footer-list .footer-link:hover{
   color: #58af9b;
@@ -338,12 +340,12 @@ footer{
   gap: 1.5rem;
 }
 #footer_subscribe p{
-  color: var(--color-neutral-30);
+  color: rgb(80, 80, 80);
 }
 #input_group{
   display: flex;
   align-items: center;
-  background-color: var(--color-neutral-0);
+  background-color: white;
   border-radius: 4px;
 }
 #input_group input{
@@ -368,7 +370,7 @@ footer{
 #footer_copyright{
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: var(--color-neutral-10);
   font-size: 0.9rem;
   padding: 1.5rem;
 }
@@ -1098,6 +1100,7 @@ dialog::backdrop{
   box-shadow: 1px 1px 6px #0000001c;
   font-size: 0.9rem;
   width: 100%;
+  resize: none;
 }
 
 .input-boxbox input:hover, 
@@ -1113,7 +1116,7 @@ dialog::backdrop{
 }
 
 .input-boxbox label {
-  font-size: 0.8rem;
+  font-size: 16px;
   font-weight: 600;
   color: #000000c0;
 }
@@ -1121,7 +1124,6 @@ dialog::backdrop{
 .continue-button button {
   width: 100%;
   margin-top: 2rem;
-  border: none;
   background-color: #58af9b;
   padding: 0.6rem;
   border-radius: 5px;
@@ -1130,13 +1132,13 @@ dialog::backdrop{
   font-weight: 500;
   font-size: 1rem;
   text-align: center;
+  border: 1px solid #58af9b;
+  transition: background-color .5s;
 }
 
 .continue-button button:hover {
   background-color: #ffff;
-  border: 1px solid #58af9b;
   color: #58af9b;
-  transition: background-color .5s;
 }
 
 @media screen and (max-width: 1064px) {
