@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clonar Projeto') {
             steps {
-                git 'https://github.com/BrunoReynaldo/ServiceMed.git'
+                git branch: 'main', url: 'https://github.com/BrunoReynaldo/ServiceMed.git'
             }
         }
 
