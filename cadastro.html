@@ -9,24 +9,16 @@
     <link rel="shortcut icon" href="img/logotitle-removebg-preview.ico" type="image/x-icon">
     <title>ServiceMed</title>
 </head>
-<?php
-    if (isset($_GET['erro']) && $_GET['erro'] == 1) {
-        $mensagemErro = "Email ou senha inválidos. Por favor, tente novamente.";
-    }
-    if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) {
-        $mensagemSucesso = "Cadastro realizado com sucesso! Você pode fazer login agora.";
-    }
-?>
 <body>
     <nav>
-        <a href="main.html"><img src="img/novalogo.png" height="90px" width="100px" id="logo"></a>
+        <a href="index.html"><img src="img/novalogo.png" height="90px" width="100px" id="logo"></a>
         <ul class="links">
             <li><a href="agendamentos.html">Agendamentos</a></li>
-            <li><a href="remedios.html">Remédios</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#ajuda">Ajuda</a></li> 
+            <li><a href="">Remédios</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Ajuda</a></li> 
         </ul>
-        <a href="cadastro.php" id="bt-cadastro">Cadastre-se</a>
+        <a href="cadastro.html" id="bt-cadastro">Cadastrar-se</a>
         <div class="mobile-menu-icon">
           <button onclick="menushow()"><img src="img/menu_icon_244496-removebg-preview.png" height="30px" width="30px" class="icon"></button>
         </div>
