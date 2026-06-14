@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/logotitle-removebg-preview.ico" type="image/x-icon">
@@ -63,12 +63,6 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">Logar usando email ou se registrando</p>
-                <!--Banco-->
-                <?php if (isset($mensagemSucesso)): ?>
-                  <div class="success">
-                    <p><?php echo $mensagemSucesso; ?></p>
-                   </div>
-                  <?php endif; ?> 
                 <form class="form" action="informacao.php" method="get">
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
@@ -89,7 +83,6 @@
                     
                     <button class="btn btn-second" onclick="validar()">Cadastrar</button>     
                 </form>
-                <!--Banco-->
             </div><!-- second column -->
         </div><!-- first content -->
         <div class="content second-content">
@@ -122,11 +115,6 @@
                 </div><!-- social media -->
                 <p class="description description-second">ou use sua conta de email</p>
                 <form class="form" action="login.php" method="get">
-                <?php if (isset($mensagemErro)): ?>
-                  <div class="error">
-                    <p><?php echo $mensagemErro; ?></p>
-                   </div>
-                  <?php endif; ?>         
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
                         <input type="email" name="email" placeholder="Email" id="email-login">
