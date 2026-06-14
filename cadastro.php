@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,16 @@
     <link rel="shortcut icon" href="img/logotitle-removebg-preview.ico" type="image/x-icon">
     <title>ServiceMed</title>
 </head>
-    <?php
-if (isset($_GET['erro']) && $_GET['erro'] == 1) {
-    $mensagemErro = "Email ou senha inválidos. Por favor, tente novamente.";
-}
-if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) {
-    $mensagemSucesso = "Cadastro realizado com sucesso! Você pode fazer login agora.";
-}
+<?php
+    if (isset($_GET['erro']) && $_GET['erro'] == 1) {
+        $mensagemErro = "Email ou senha inválidos. Por favor, tente novamente.";
+    }
+    if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) {
+        $mensagemSucesso = "Cadastro realizado com sucesso! Você pode fazer login agora.";
+    }
 ?>
-
-
-
-
 <body>
-        <nav>
+    <nav>
         <a href="main.html"><img src="img/novalogo.png" height="90px" width="100px" id="logo"></a>
         <ul class="links">
             <li><a href="agendamentos.html">Agendamentos</a></li>
@@ -31,12 +27,9 @@ if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) {
             <li><a href="#ajuda">Ajuda</a></li> 
         </ul>
         <a href="cadastro.php" id="bt-cadastro">Cadastre-se</a>
-
-
         <div class="mobile-menu-icon">
           <button onclick="menushow()"><img src="img/menu_icon_244496-removebg-preview.png" height="30px" width="30px" class="icon"></button>
         </div>
-
     </nav>
      <div class="mobile-menu">
       <ul class="links">
@@ -245,7 +238,7 @@ if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) {
 
        <div id="footer_copyright">
         &#169
-        2024 ServiceMed
+        2026 ServiceMed
        </div>
     </footer>
 
@@ -291,4 +284,3 @@ if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) {
     
 </body>
 </html>
-
